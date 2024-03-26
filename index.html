@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .title {
+            font-weight: bold;
+            font-size: 30px;  
+        }
+        header {
+            font-size: 25px;
+            font-family: Bookman Old Style;
+            padding: 20px;
+            display:flex; 
+            justify-content:space-between;
+           
+        }
+        nav span {
+            margin-left: 25px;        
+        }
+        .shortcut span{
+            padding-left: 25px;            
+        }
+        article {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            font-family: Bookman Old style;
+            text-align: center;
+        }
+        .bi-lightning-fill {
+            color: gold;
+        }
+
+        footer {
+            background-color: black;
+            color: aliceblue;
+            font-family: Bookman Old style;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+            margin-top: 10px;
+        }
+        .footer_titlee {
+            font-weight: bold;
+            font-family: Bookman Old style;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .footer_title {
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .footer_title~span {
+            display: block;
+            margin-bottom: 15px;
+        }
+        address span{
+            display: block;
+            margin-bottom: 15px;      
+        }
+        .footer_titlee~div span{
+            margin-right: 8px;
+            font-size: 25px;
+        }
+        .maindiv1 {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            grid-gap: 5px;
+            height: 650px;
+            text-shadow: 5px 5px 10px gray;
+        }
+        .women, .men, .kids {
+            background-size: cover;
+            font-size: 25px;
+            color: white;
+            display: grid;
+            height: 650px;
+            justify-content: center;
+            align-items: center;
+        }
+        .women {
+            background-image: url(images/women.jpg);
+        }
+        .men {
+            background-image: url(images/men.jpg);
+        }
+        .kids {
+            background-image: url(images/kids.jpg)
+        }
+        .shipping-details {
+            width: 1000px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            grid-gap: 80px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-left: 250px;
+        }
+        .shipping-details-color {
+            color: gray;
+            padding: 10px 0px 0px 30px;
+        }
+        .bi-truck, .bi-arrow-left-right, .bi-lock, .bi-tag{
+            
+            color: rgb(216, 33, 33);
+            padding-right: 10px;
+        }
+        .collection-div {
+            width: 80%;
+            height: 400px;
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            grid-gap: 30px;
+            margin-left: 150px;
+        }
+        .bag {
+            background-image: url(images/bag.webp);
+            background-size: cover;
+            color: white;
+            display: grid;
+            justify-content: center; 
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .printed {
+            background-image: url(images/printed.webp);
+            background-size: cover;
+            color:white;
+            display: grid;
+            justify-content: center; 
+            align-items: center;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .other-women {
+            display: grid;
+            grid-template-columns: 7fr 5fr;
+            height: 500px;
+            width: 80%;
+            grid-gap: 30px;
+            padding: 20px;
+            margin-left: 130px;
+        }
+        .basic {
+            background-image: url(images/basic.webp);
+            background-size: cover;
+            color:white;
+            display: grid;
+            justify-content: center; 
+            align-items: center;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .sweatshirt {
+            background-image: url(images/sweat.avif);
+            background-size: cover;
+            color:white;
+            display: grid;
+            justify-content: center; 
+            align-items: center;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .topseller-div {
+            display: grid;
+            padding: 10px;
+            justify-content: center;
+        }
+        .topseller-div-title {
+            font-size: 35px;
+            color: black;
+            font-weight: bold;
+        }
+        .topseller-div-details{
+            padding-top: 20px;
+        }
+        .topseller-div-details span {
+            padding: 10px 10px 10px 10px ;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(194, 67, 67);
+            
+        }
+    </style> <!-- display: flxe -> helps to arrange all div's side by side in header
+                  justify-content:  helps to give spaces according to the give value-->
+            <!-- nav span means all the attributes and values are applied to span in the nav-->
+    
+</head>
+<body>
+    <header >
+        <div >
+            <span class="title">Shopper.</span>   <!-- By using span, it is easily to highlight,apply some efforts -->
+
+        </div>
+        <nav>
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>             
+            <span>Blog</span>
+            <span>Docs</span>
+        </nav>
+        <div class="shortcut">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart2"></span>
+        </div>
+    </header>
+    <article>
+        <span class="bi bi-lightning-fill"></span>
+        <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+        <span class="bi bi-lightning-fill"></span>
+    </article>
+
+
+    <section>
+        <main style="margin-top: 5px;">
+           <div class="maindiv1">
+            <div class="women">
+                    <h1>Women</h1> 
+                    
+            </div>
+                
+            <div class="men">
+                   <h1>Men</h1>
+            </div>
+
+            <div class="kids">
+                   <h1>Kids</h1>
+            </div>
+           </div>
+
+           <div class="shipping-details">
+                <div>
+                    <div>
+                        <span class="bi bi-truck"></span> Free Shipping
+                    </div>
+                    <div class="shipping-details-color">
+                        From all orders over $100
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="bi bi-arrow-left-right"></span> Free Returns
+                    </div>
+                    <div class="shipping-details-color">
+                        Return money within 30 days
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="bi bi-lock"></span> Secure Shipping
+                    </div>
+                    <div class="shipping-details-color">
+                        You're in safe hands
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="bi bi-tag"></span> Over 10,000 Styles
+                    </div> 
+                    <div class="shipping-details-color">
+                        We have everything you need
+                    </div>
+                </div>
+
+           </div>
+
+           <div class="collection-div">
+            <div class="bag">
+                <div>Bag Collection</div>
+                <div>Shop Now <span class="bi bi-arrow-right"></span></div>
+                
+            </div>
+
+            <div class="printed">
+                <div>Printed Men's Shirt</div>
+                <div>Shop Now <span class="bi bi-arrow-right"></span></div>
+            </div>
+           </div>
+
+           <div class="other-women">
+                <div class="basic">
+                    <div>Basic womens's Dresses</div>
+                    <div>Shop Now <span class="bi bi-arrow-right"></span></div>
+                </div>
+
+                <div class="sweatshirt">
+                    <div>Sweatshirts</div>
+                    <div>Shop Now <span class="bi bi-arrow-right"></span></div>
+                </div>
+
+           </div>
+
+           <div class="topseller-div">
+                <div class="topseller-div-title">
+                    Top Month Sellers
+                </div>
+                <div class="topseller-div-details">
+                    <a href=""><span>Women</span></a>
+                    <a href=""><span>Men</span></a>
+                    <a href=""><span>Kids</span></a>
+                </div>
+
+           </div>
+        </main>
+
+    </section>
+
+
+    <footer>
+        <div>
+            <div class="footer_titlee"> Shopper.</div>
+            <div>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-instagram"></span>
+            </div>
+        </div>
+
+        <div>
+            <div class="footer_title">SUPPORT</div>
+            <span>Contact Us</span>   <!-- Contact Us, FAQ, Size Guide, Shipping... is placed in lists. div and span are not recommended-->
+            <span>FAQ's</span>
+            <span>Size Guide</span>
+            <span>Shipping & Retuens</span>
+        </div>
+
+        <div>
+            <div class="footer_title">SHOP</div>
+            <span>Men's Shopping</span>
+            <span>Women's Shopping</span>
+            <span>Kid's Shopping</span>
+            <span>Discounts</span>
+        </div>
+
+        <div>
+            <div class="footer_title">COMPANY</div>
+            <span>Our Story</span>
+            <span>Carrers</span>
+            <span>Terms & Conditions</span>
+            <span>Privacy & Policy</span>
+        </div>
+
+        <div>
+            <div class="footer_title">CONTACT</div>
+            <address>
+                <span>1-2022125</span>
+                <span>1-5412015</span>
+                <span>help@shoper.com</span>
+            </address>
+        </div>
+
+    </footer>
+</body>
+</html>
